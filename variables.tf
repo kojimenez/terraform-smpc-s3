@@ -43,3 +43,8 @@ variable "allowed_cidrs" {
   description = "allowed cidr blocks for EC2 SG"
   type = list(string)
 }
+
+variable "public_key_path" {
+  type        = string
+  description = "Path to the public key file"
+}
