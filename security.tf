@@ -48,3 +48,8 @@ resource "aws_security_group" "ec2_main-server" {
     Environment = var.environment
   }
 }
+
+resource "aws_key_pair" "my_ec2_key" {
+  key_name   = "my-ec2-key"
+  public_key = file("C:/Users/YourUsername/.ssh/my-key-pair.pub")
+}
